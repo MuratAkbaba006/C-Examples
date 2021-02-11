@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+void cevrealan(int e,int b,int *c,int *a)
+{
+	*c=2*(e+b);
+	*a=e*b;
+	
+}
+
+int main() {
+int en,boy,cevre,alan;
+printf("dikdortgen en ve boyunu gir");scanf("%d %d",&en,&boy);
+if(en<0 || boy<0)
+printf("yanlis deger girdiniz-->");
+else
+{
+	cevrealan(en,boy,&cevre,&alan);
+	printf("cevre = %d",cevre);
+	printf("alan = %d",alan);
+	
+	
+}
+
+
+
+	return 0;
+}

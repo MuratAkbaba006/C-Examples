@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main() {
+	int i;
+  int enyakinmesafe=25;
+   int enyakinsayi=25;
+   for( i = 0;i<3;i++){
+     int sayi;
+     scanf("%d",&sayi);
+     if((25-sayi)*(25-sayi)<enyakinmesafe){
+                enyakinmesafe = (25-sayi)*(25-sayi);
+                enyakinsayi = sayi;
+     }
+   }
+   printf("en yakin sayi : %d",enyakinsayi);
+	
+	return 0;
+}

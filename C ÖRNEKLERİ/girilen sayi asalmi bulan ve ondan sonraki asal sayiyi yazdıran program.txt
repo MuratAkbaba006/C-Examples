@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+
+
+int main() {
+	int i,sayi,sayac=0;
+	char asal='E';
+printf("bir sayi giriniz-->");scanf("%d",&sayi);
+	for(i=2;i<=sayi;i++)
+	{ asal='E';
+		if(sayi%i==0)
+		asal='H';break;
+		
+		
+	}
+	if(asal=='E')
+	{ 
+	
+	printf("%d sayisi asaldir ve ondan sonraki asal sayi \n",sayi);
+	sayi=sayi+1;
+	while(sayac<1)
+	{
+		asal='E';
+		for(i=2;i<sayi;i++)
+		{
+			
+			if(sayi%i==0)
+			{
+				asal='H';break;
+			}
+		}
+		if(asal=='E')
+		{
+			printf("%d\t",sayi);
+			sayac++;
+		}
+		sayi++;
+	}
+		
+	}
+	else
+	printf("girdiginiz sayi asal degildir");
+	
+	return 0;
+}
+
+

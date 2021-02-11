@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+
+double sonuc;
+double get_angle(int hour, int minute)
+{
+	sonuc=(11*minute-60*hour)/2;
+	if(sonuc<0)
+	sonuc=-sonuc;
+	
+	return sonuc;
+	
+	
+}
+int main() {
+	int saat,dakika;
+printf("saati giriniz-->\n");scanf("%d",&saat);
+printf("dakikayi giriniz-->\n");scanf("%d",&dakika);
+printf("akrep yelkovan arasindaki aci = %.2fl dir",get_angle(saat,dakika));
+
+
+	return 0;
+}
+
+

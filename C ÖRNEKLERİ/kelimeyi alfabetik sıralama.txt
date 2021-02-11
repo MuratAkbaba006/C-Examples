@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main() {
+ char gecici;
+ int uzunluk,i,j;
+  char dizi[20];
+ printf("bir kelime giriniz-->");scanf("%s",dizi);
+uzunluk=strlen(dizi);
+for(i=0;i<uzunluk-1;i++)
+{
+	
+	for(j=i+1;j<uzunluk;j++)
+	{
+		
+		if(dizi[i]>dizi[j])
+		{
+			
+			gecici=dizi[i];
+			dizi[i]=dizi[j];
+			dizi[j]=gecici;
+			
+		}
+		
+	}
+	
+	
+	
+}
+
+
+printf("%s",dizi);
+	return 0;
+}

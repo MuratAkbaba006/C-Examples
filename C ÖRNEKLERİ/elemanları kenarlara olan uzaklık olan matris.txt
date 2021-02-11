@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int min(int a,int b,int c,int d)
+{
+	if(a<=b && a<=c && a<=d)
+	return a;
+	if(b<=a && b<=c && a<=d)
+	return b;
+	if(c<=a && c<=b && c<=d)
+	return c;
+	if(d<=a && d<=b && d<=c)
+	return d;
+	
+}
+
+int main() {
+	
+	
+	
+	
+	
+	int sayi,j,i,a,b;
+printf("bir sayi giriniz--->");scanf("%d",&sayi);
+
+	
+	for(i=1;i<=sayi;i++)
+	{
+		for(j=1;j<=sayi;j++)
+		{
+			 a=sayi -i+1;
+			 b=sayi -j+1;
+			printf("%d",min(i,j,a,b));
+			
+		}
+		
+		printf("\n");
+	}
+	
+	
+	
+	
+	return 0;
+}

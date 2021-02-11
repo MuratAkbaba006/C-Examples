@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	
+	int sayi;
+	
+	printf("bir sayi giriniz-->");scanf("%d",&sayi);
+	
+ int j,i;
+ 
+
+	 for(i=0;i<sayi;i++)
+ {
+ 	for(j=0;j<sayi;j++)
+ 	{
+ 		
+ 		if(i+j == sayi/2 || i+j == 3*sayi/2-1 || i-j == sayi/2 || j-i == sayi/2)
+ 		printf("*");
+ 		else
+ 		printf(" ");
+		
+ 		
+	 }
+ 	
+ 	printf("\n");
+ }
+	
+
+ 
+ 
+ 
+ 
+	
+	return 0;
+}
+

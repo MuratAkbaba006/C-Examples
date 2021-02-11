@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+void hesapla(int t,int *st,int *dk,int *sn)
+{
+	*st=t/3600;
+	t=t-(*st*3600);
+	*dk=t/60;
+	*sn=t-(*dk*60);
+	
+	
+	
+}
+
+int main() {
+
+int toplam,saat,dakika,saniye;
+
+printf("yolculuk kac saniye surdu");scanf("%d",&toplam);
+if(toplam<0)
+printf("yanlis deger girdiniz-->");
+else
+{
+	
+	hesapla(toplam,&saat,&dakika,&saniye);
+	printf("yolculuk %d saat %d dakika %d saniye",saat,dakika,saniye);
+	
+	
+	
+}
+
+
+	return 0;
+}

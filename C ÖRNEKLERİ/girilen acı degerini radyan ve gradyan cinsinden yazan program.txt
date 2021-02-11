@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+
+
+
+
+int main() {
+
+float R,G,aci,pi;
+
+printf("bir aci giriniz-->");scanf("%f",&aci);
+pi=M_PI;
+R=aci*pi/180;
+G=aci*200/180;
+printf("radyan cinsinden degeri=%0.3f\n",R);
+printf("gradyan cinsinden degeri=%0.3f\n",G);
+
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

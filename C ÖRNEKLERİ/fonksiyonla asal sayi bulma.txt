@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void asalbulma(int say)
+{   char asal='E';
+int i;
+	
+	for(i=2;i<say;i++)
+	{ 
+		if(say%i==0)
+		{
+		asal='H';
+		break;
+	}
+	}
+	
+	if(asal=='E')
+	printf("sayi asaldir");
+	else
+	printf("sayi asal degildir");
+	
+	
+}
+
+int main() {
+	int sayi;
+printf("bir sayi giriniz-->");scanf("%d",&sayi);
+asalbulma(sayi);
+	return 0;
+}

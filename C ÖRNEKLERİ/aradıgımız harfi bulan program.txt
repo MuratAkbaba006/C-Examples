@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main() {
+	char dizi[20],harf;
+	int i,uzunluk;
+	printf("bir cumle giriniz-->");gets(dizi);
+	uzunluk=strlen(dizi);
+	printf("aranacak harfi giriniz-->");scanf("%s",&harf);
+	
+	for(i=0;i<uzunluk;i++)
+	{
+		if(dizi[i]==harf)
+		{
+			printf("aradiginiz harf dizinin %d. indisinde bulundu",i);
+			
+		}
+		
+	}
+	
+	
+	
+	return 0;
+}

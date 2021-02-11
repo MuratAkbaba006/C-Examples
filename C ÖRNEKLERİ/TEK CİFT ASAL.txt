@@ -1,0 +1,60 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	
+	int i,j,dizi[10];
+	char asal='E';
+	for(i=0;i<10;i++)
+	{
+	
+printf("bir sayi giriniz-->");scanf("%d",&dizi[i]);
+}
+printf("\ncift sayilar\n");
+for(i=0;i<10;i++)
+{
+	
+	if(dizi[i]%2==0)
+	{
+	
+printf("%d\n",dizi[i]);
+
+}
+}
+printf("\ntek sayilar\n");
+
+for(i=0;i<10;i++)
+{
+	
+	if(dizi[i]%2!=0)
+	{
+	
+printf("%d\n",dizi[i]);
+
+}
+}
+printf("asal sayilar\n");
+	for(i=0;i<10;i++)
+	{ asal='E';
+		for(j=2;j<dizi[i];j++)
+		{
+			if(dizi[i]%j==0 ){
+			
+		asal='H';break;}
+	
+			
+		}
+		
+			if(asal=='E')
+	{
+	printf("%d\n",dizi[i]);
+	}
+	}
+
+
+	
+
+
+return 0;	
+	}

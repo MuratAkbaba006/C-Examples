@@ -1,0 +1,33 @@
+ #include <stdio.h>
+ #include <stdlib.h>
+ int fact(int);
+ int main()
+ {
+ int i,j,k,a,b,boyut;
+ boyut=26;a=boyut/2;b=boyut/2;
+ for(i=0;i<boyut/2;i++){k=0;
+ for(j=1;j<boyut;j++){
+ if(!(j>=a&&j<=b))
+ printf(" ");
+ else if((j-a)%2==0)
+ {
+ printf("%4d",fact(i)/fact(k)/fact(i-k));k++;
+ }
+ }//ikinci for un sonu
+ printf("\n");a--;b++;
+ }//birinci for un sonu
+ system("pause");
+ return 0;
+ }
+ int fact( int n)/// recursive( kendini çagiran ) fonksiyon
+ {
+ if(n==0||n==1)
+ return 1;
+ else if(n>1)
+ return n*fact(n-1);/// kendini çagirma
+ else
+ {
+ printf("wrong factorial\n");
+ return -1;
+ }
+ }

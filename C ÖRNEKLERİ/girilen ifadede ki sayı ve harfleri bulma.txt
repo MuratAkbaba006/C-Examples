@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main() {
+char dizi[20];
+int i;
+  printf("bir ifade giriniz-->");scanf("%s",&dizi);
+for(i=0;i<20;i++)
+{
+	if(dizi[i]=='0' || dizi[i]=='1' || dizi[i]=='2' || dizi[i]=='3' || dizi[i]=='4' || dizi[i]=='5' || dizi[i]=='6' || dizi[i]=='7' || dizi[i]=='8' || dizi[i]=='9')
+	printf(" %d rakam\n",dizi[i]-48);
+	else
+	printf("%c harf\n",dizi[i]);
+	
+	
+}
+
+	return 0;
+}

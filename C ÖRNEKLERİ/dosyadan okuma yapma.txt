@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+
+ FILE *dosya;
+char kelime[50][20];
+int i;
+if((dosya=fopen("ekip.txt","r"))!=NULL)
+{
+	while(!feof(dosya))
+	{
+		fscanf(dosya,"%s\n",&kelime[i]);
+		printf("%s\n",kelime[i]);
+		i++;
+	}
+}
+else
+{
+	printf("dosya bulunamadi");
+}
+
+ fclose(dosya);
+
+
+
+	return 0;
+}

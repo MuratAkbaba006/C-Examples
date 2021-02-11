@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+
+
+int main() {
+float sayi,ondalikkisim;
+int tamkisim;
+tamkisim=0;
+ondalikkisim=0.0;
+sayi=0.0;
+printf("bir sayi giriniz-->");scanf("%f",&sayi);
+tamkisim=sayi;
+ondalikkisim=sayi-tamkisim;
+printf("tam kisim =%d dir\n",tamkisim);
+printf("ondalik kisim = %f dir",ondalikkisim);
+
+
+	return 0;
+}

@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	int i,sayi;
+	
+printf("bir sayi giriniz-->");scanf("%d",&sayi);
+	for(i=2;sayi>1;i++)
+	{
+		
+		while(sayi%i==0)
+		{
+			printf("%d\n",i);
+			sayi=sayi/i;
+		}
+
+
+   
+			
+		}
+		
+		
+		
+	
+	
+	
+	
+	
+	
+	return 0;
+}

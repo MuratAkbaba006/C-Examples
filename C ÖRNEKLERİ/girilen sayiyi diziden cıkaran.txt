@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+int main() {
+
+int m,i,x[10],j,num;
+printf("M giriniz-->(<10)");
+scanf("%d",&m);
+printf("%d adet tamsayi giriniz-->",m);
+for(i=0;i<m;i++)
+scanf("%d",&x[i]);
+printf("bir sayi gir");scanf("%d",&num);
+for(i=0;i<m;i++)
+{
+	if(x[i]==num)
+	{
+		for(j=i;j<m-1;j++)
+   x[j]=x[j+1];		
+	}
+	
+}
+printf("yeni dizi");
+for(i=0;i<m-1;i++)
+printf("%d",x[i]);
+
+	return 0;
+}
